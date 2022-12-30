@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <parameter name="browser" value="chrome"></parameter>
+    <parameter name="app" value="https://the-internet.herokuapp.com/"></parameter>
+    <test verbose="2" preserve-order="true"
+          name="chrome">
+        <classes>
+            <class name="chapter2.AssertionExample">
+                <methods>
+                    <include name="testLogo"/>
+                    <include name="testHomePageTitle"/>
+                    <include name="testLogininHomePage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--
+    <parameter name="browser" value="firefox"></parameter>
+    <parameter name="app" value="https://opensource-demo.orangehrmlive.com/"></parameter>
+    <test verbose="2" preserve-order="true"
+          name="firefox">
+        <classes>
+            <class name="chapter2.AssertionExample">
+                <methods>
+                    <include name="testLogo"/>
+                    <include name="testHomePageTitle"/>
+                    <include name="testLogininHomePage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+-->
+
+
+</suite>
